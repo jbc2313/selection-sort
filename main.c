@@ -28,10 +28,11 @@ void selection(int *pntr, int size) {
 };
 
 int main() {
-    int array[] = {8, 11, 3, 5, 18, 4, 1, 13, 14};
+    int array[] = {8, 11, 3, 9, 5, 18, 4, 1, 13, 14};
     int size = sizeof(array) / sizeof(array[0]);
     listArray(array, size);
     selection(array, size);
+    printf("Array was sorted!\n");
     listArray(array, size);
     return 0;
 }
